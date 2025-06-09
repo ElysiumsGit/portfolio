@@ -5,13 +5,8 @@ import TyperAnimation from './TypeAnimation';
 const Profile = () => {
   return (
     <div className="max-w-xs bg-white rounded-b-[2rem] rounded-tl-[2rem] p-6 shadow-md text-center">
-      {/* <img
-        src="https://randomuser.me/api/portraits/women/44.jpg" // Replace with actual image
-        alt="Profile"
-        className="w-full h-64 object-cover rounded-3xl mb-4"
-      /> */}
-
-      <div className="w-[275px] h-64 bg-gray-200 rounded-3xl mb-4"></div>
+      
+      <div className="glitch"></div>
 
       <TyperAnimation/>
 
