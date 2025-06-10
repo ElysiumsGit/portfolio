@@ -5,6 +5,7 @@ import About from "./pages/About"
 import WorkExperience from "./pages/WorkExperience";
 import { AnimatePresence } from "framer-motion";
 import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 function App() {
   const [activeNav, setActiveNav] = useState(null);
@@ -23,6 +24,7 @@ function App() {
           <About activeNav={activeNav} />
           <WorkExperience activeNav={activeNav}/>
           <Projects activeNav={activeNav}/>
+          <Contact activeNav={activeNav}/>
         </AnimatePresence>
       </div>
     </div>

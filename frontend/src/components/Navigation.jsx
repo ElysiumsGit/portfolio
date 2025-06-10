@@ -11,7 +11,7 @@ const navIcons = [
   { id: "about", icon: <IoPersonSharp size={18} />, bg: "bg-gray-100" },
   { id: "experience", icon: <FaUniversity size={18} />, bg: "bg-gray-100" },
   { id: "projects", icon: <FaBriefcase size={18} />, bg: "bg-gray-100" },
-  { id: "send", icon: <FaPaperPlane size={18} />, bg: "bg-gray-100" },
+  { id: "contact", icon: <FaPaperPlane size={18} />, bg: "bg-gray-100" },
 ];
 
 const Navigation = ({ active, onNavChange }) => {
