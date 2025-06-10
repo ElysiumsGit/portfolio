@@ -4,7 +4,7 @@ const ContactField = () => {
   return (
     <section>
       <h1 className="text-4xl font-semibold text-gray-900 mb-8">
-        Let's make your project brilliant!
+        MESSAGE ME!
       </h1>
 
       <form className="space-y-6">

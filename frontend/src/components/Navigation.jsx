@@ -1,6 +1,7 @@
 import React from "react";
 import { IoReorderThree, IoMoonOutline, IoPersonSharp } from "react-icons/io5";
 import { FaUniversity, FaBriefcase, FaIdBadge, FaPaperPlane } from "react-icons/fa";
+import useResponsive from "../utils/useResponsive";
 
 const headerIcons = [
   { id: "menu", icon: <IoReorderThree size={20} />, bg: "bg-white" },
@@ -13,6 +14,8 @@ const navIcons = [
   { id: "projects", icon: <FaBriefcase size={18} />, bg: "bg-gray-100" },
   { id: "contact", icon: <FaPaperPlane size={18} />, bg: "bg-gray-100" },
 ];
+
+const { isMobile, isTablet, isDesktop } = useResponsive(); 
 
 const Navigation = ({ active, onNavChange }) => {
   const handleClick = (id) => {
