@@ -54,7 +54,7 @@ const WorkExperience = ({ activeNav }) => {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: 50 }}
           transition={{ duration: 0.4, ease: "easeInOut" }}
-          className=" text-left max-h-[550px] px-6 flex flex-col gap-12 mt-12"
+          className=" text-left px-6 flex flex-col gap-12 mt-12"
         >
           <WorkExperienceContent />
           <EducationContent />

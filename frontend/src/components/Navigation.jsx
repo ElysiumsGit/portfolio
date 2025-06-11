@@ -17,6 +17,7 @@ const navIcons = [
 ];
 
 const Navigation = ({ active, onNavChange }) => {
+  
   const handleClick = (id) => {
     onNavChange(id);
   };
@@ -27,15 +28,13 @@ const Navigation = ({ active, onNavChange }) => {
 
   const { isMobile, isTablet, isDesktop } = useResponsive();
 
-  const iconSize = isMobile ? 16 : isTablet ? 20 : 24;
-  const headerTopIconSize = isMobile ? 24 : isTablet ? 20 : 24;
+  const iconSize = isMobile ? 24 : isTablet ? 20 : 16;
+  const headerTopIconSize = isMobile ? 24 : isTablet ? 20 : 16;
 
   return (
     <>
-      {/* Desktop Navigation */}
       {isDesktop && (
         <div className="flex flex-col items-center gap-4">
-          {/* Header icons */}
           {headerIcons.map(({ id, icon: Icon, bg }) => (
             <button
               key={id}
@@ -47,7 +46,6 @@ const Navigation = ({ active, onNavChange }) => {
             </button>
           ))}
 
-          {/* Navigation icons */}
           <div className="flex flex-col items-center gap-2 p-2 rounded-full bg-white shadow-lg">
             {navIcons.map(({ id, icon: Icon, bg, text }) => (
               <button
@@ -65,13 +63,10 @@ const Navigation = ({ active, onNavChange }) => {
         </div>
       )}
 
-      {/* Tablet Layout */}
       {isTablet && <div className="text-center">Tablet view coming soon...</div>}
 
-      {/* Mobile Navigation */}
       {isMobile && (
         <div className="sticky top-0 z-50 bg-white shadow-md border-b border-gray-200 px-4 py-4">
-          {/* Header Section */}
           <section className="flex items-center justify-between">
             <div className="flex flex-col items-start">
               <h1 className="text-sm font-semibold">John Carlo Abanes</h1>
@@ -91,7 +86,6 @@ const Navigation = ({ active, onNavChange }) => {
             </div>
           </section>
 
-          {/* Navigation Icons */}
           <section className="flex justify-between mt-4 px-2">
             {navIcons.map(({ id, icon: Icon, bg, text }) => (
               <button
