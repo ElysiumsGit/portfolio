@@ -143,7 +143,7 @@ const WorkExperienceContent = () => {
             </h1>
 
             {experiencePairs.flat().map((item, idx) => (
-              <div key={idx} className="bg-white rounded-xl shadow p-4">
+              <div key={idx} className="p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-gradient-to-br from-white to-gray-50">
                 <div className="text-pink-500 font-medium text-sm mb-2">{item.date}</div>
                 <h3 className="text-lg font-semibold text-gray-900">{item.role}</h3>
                 <p className="text-xs uppercase text-gray-400 mt-1">{item.location}</p>
