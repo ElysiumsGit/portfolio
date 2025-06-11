@@ -36,13 +36,20 @@ function App() {
       {isTablet && (
         <div className="text-center text-xl text-gray-500 p-8">
             <Navigation active={activeNav} onNavChange={setActiveNav} />
+            <Profile/>
         </div>
       )}
 
       {isMobile && (
-        <div className="text-center text-xl text-gray-500 p-8">
+        <div className="text-center text-xl text-gray-500 flex flex-col">
             <Navigation active={activeNav} onNavChange={setActiveNav} />
             <Profile/>
+            <AnimatePresence mode="wait">
+              <About activeNav={activeNav} />
+              <WorkExperience activeNav={activeNav} />
+              {/* <Projects activeNav={activeNav} /> */}
+              {/* <Contact activeNav={activeNav} /> */}
+            </AnimatePresence>
         </div>
       )}
     </>
